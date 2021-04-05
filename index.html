@@ -1,458 +1,450 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link rel="icon" type="imagem/jpg" href="img/logo/logo9bIcon.png">
-        <title>Roger Guimaraes</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/styleResponsivo.css"/>
-        
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
-        <link rel="stylesheet" href="css/fontawesome-free-5.15.1-web/css/all.min.css"/>
 
-    </head>
+<head>
+    <link rel="icon" type="imagem/jpg" href="img/logo/logo9bIcon.png">
+    <title>Roger Guimaraes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleResponsivo.css" />
 
-    <body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.1-web/css/all.min.css" />
 
-        <div id="mySidenav" class="sidenav">
+</head>
 
-            <div class="bt_menulateral">
+<body>
+
+    <div id="mySidenav" class="sidenav">
+
+        <div class="bt_menulateral">
+
+            <input type="checkbox" id="nav-toggle">
+
+            <label for="nav-toggle" onclick="openNav()">
+                <span class="open"></span>
+            </label>
+
+            <div class="closebtn">
 
                 <input type="checkbox" id="nav-toggle">
 
-                <label for="nav-toggle" onclick="openNav()" >
-                    <span class="open"></span>
+                <label for="nav-toggle" onclick="closeNav()">
+                    <span class="close"></span>
                 </label>
-
-                <div class="closebtn"> 
-
-                    <input type="checkbox" id="nav-toggle">
-
-                    <label for="nav-toggle" onclick="closeNav()">
-                        <span class="close"></span>
-                    </label>
-
-                </div>
-            </div>
-
-            <div class="modal">
-
-                <div class="modal_content">                  
-                    <button id="bt_close"><i class="fas fa-times"></i></button>
-                    <img id="modal_img" src="img/portfolio/img_1.jpg">              
-                </div>
-            </div>
-
-
-            <div class="col-1">
-
-                <div class="topo">
-
-                    <a href="#" class="shadow image perfil"><img src="img/logo/logo9a.jpg" alt="Logo do Site do Roger Guimaraes" title="Logo do Site do Roger Guimaraes"/></a>
-                    <h1 class="title">Roger Guimaraes</h1>
-
-                    <h2 class="subtitulo">Desenvolvedor</h2>
-
-                </div>
-
-                <nav id="nav">
-                    <div class="nav">
-                        <ul>
-                            <li><a href="#inicio" id="link-inicio">Início<i class="icon solid fa fa-home"></i></a></li>
-                            <li><a href="#sobre" id="link-sobre">Sobre<i class="icon solid fa fa-user"></i></a></li>
-                            <li><a href="#educacao" id="link-sobre">Educação<i class="fas fa-user-graduate"></i></a></li>
-                            <li><a href="#habilidade" id="link-sobre">Habilidades<i class="fas fa-chart-bar"></i></a></li>
-                            <li><a href="#portfolio" id="link-portfolio">Portfólio<i class="icon fa solid fa-th"></i></a></li>
-                            <li><a href="#contato" id="link-contato">Contato<i class="icon solid fa fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <div id="icons">
-                    <div class="icons">
-                        <ul>
-                            <li><a href="https://www.instagram.com/rogerguimmaraes" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/rogerguimaraes" target="_blank"><i class="icon brands fab fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/rogerlog" target="_blank"><i class="icon brands fab fa-github"></i></a></li>
-                            <li><a href="mailto:logroger@gmail.com?subject=Olá, envie sua mensagem, responderei em breve. Obrigado!%20" target="_blank"><i class="icon solid fa fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
 
             </div>
         </div>
 
-        <div class="col-2">
+        <div class="modal">
 
-            <!--Botão inicio-->
-            <div class="myBtnTopo">
-                <button onclick="topFunction()" id="myBtnTopo" title="Vá para o topo">
-                    <i class="fas fa-angle-up fa-blink fa-rotate-270 fa-lg"></i>
-                    <a>INÍCIO</a>
-                </button>
+            <div class="modal_content">
+                <button id="bt_close"><i class="fas fa-times"></i></button>
+                <img id="modal_img" src="img/portfolio/img_1.jpg">
+            </div>
+        </div>
+
+
+        <div class="col-1">
+
+            <div class="topo">
+
+                <a href="#" class="shadow image perfil"><img src="img/logo/logo9a.jpg"
+                        alt="Logo do Site do Roger Guimaraes" title="Logo do Site do Roger Guimaraes" /></a>
+                <h1 class="title">Roger Guimaraes</h1>
+
+                <h2 class="subtitulo">Desenvolvedor</h2>
 
             </div>
 
-            <header id="inicio">
+            <nav id="nav">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#inicio" id="link-inicio">Início<i class="icon solid fa fa-home"></i></a></li>
+                        <li><a href="#sobre" id="link-sobre">Sobre<i class="icon solid fa fa-user"></i></a></li>
+                        <li><a href="#educacao" id="link-sobre">Educação<i class="fas fa-user-graduate"></i></a></li>
+                        <li><a href="#habilidade" id="link-sobre">Habilidades<i class="fas fa-chart-bar"></i></a></li>
+                        <li><a href="#portfolio" id="link-portfolio">Portfólio<i class="icon fa solid fa-th"></i></a>
+                        </li>
+                        <li><a href="#contato" id="link-contato">Contato<i class="icon solid fa fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-                <div class="inicio">
+            <div id="icons">
+                <div class="icons">
+                    <ul>
+                        <li><a href="https://www.instagram.com/rogerguimmaraes" target="_blank"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rogerguimaraes" target="_blank"><i
+                                    class="icon brands fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/rogerlog" target="_blank"><i
+                                    class="icon brands fab fa-github"></i></a></li>
+                        <li><a href="mailto:logroger@gmail.com?subject=Olá, envie sua mensagem, responderei em breve. Obrigado!%20"
+                                target="_blank"><i class="icon solid fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
 
-                    <h1>Roger Guimaraes</h1>
-                    <h3 class="text"></h3>
+        </div>
+    </div>
 
-                    <a href="#portfolio"><button class="btnInicio">P O R T F Ó L I O</button></a>
+    <div class="col-2">
 
-                    <div class="palavra">
-                        <span>1JO</span><br>
-                        <div id="linha-horizontal"></div>
-                        <span>13</span><br>
-                        <div id="linha-horizontal"></div>
-                        <span>07</span>
+        <!--Botão inicio-->
+        <div class="myBtnTopo">
+            <button onclick="topFunction()" id="myBtnTopo" title="Vá para o topo">
+                <i class="fas fa-angle-up fa-blink fa-rotate-270 fa-lg"></i>
+                <a>INÍCIO</a>
+            </button>
+
+        </div>
+
+        <header id="inicio">
+
+            <div class="inicio">
+
+                <h1>Roger Guimaraes</h1>
+                <h3 class="text"></h3>
+
+                <a href="#portfolio"><button class="btnInicio">P O R T F Ó L I O</button></a>
+
+                <div class="palavra">
+                    <span>1JO</span><br>
+                    <div id="linha-horizontal"></div>
+                    <span>13</span><br>
+                    <div id="linha-horizontal"></div>
+                    <span>07</span>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="content">
+
+            <section id="sobre">
+
+                <h2 class="titulopagina" data-animation="left">SOBRE</h2>
+
+                <div class="sobtextoimg">
+
+                    <div class="sobtexto" data-animation="left">
+
+                        <h3 class="nome">Roger<br>Guimaraes</h3>
+
+                        <p style="line-height: 2em;">
+                            &nbsp Olá, seja muito bem vindo, sou formado em engenharia mecânica e ciência da computação.
+                            <br>
+                            &nbsp Iniciei minha carreira como técnico em informática e já atuei na área de suporte,
+                            manutenção de redes, desenvolvimento em java e instalação/configuração de sensores de
+                            automação.
+                            <br>
+                            &nbsp Na área de software developer estou estudando Java, Angular e Node.
+                            <br>
+                            &nbsp Em Engenharia de dados estou estudando Python, Scala e ambiente Cloud.
+                            <br>
+                            &nbsp Além dessas tecnologias, tenho interesse em entender melhor Ruby, Elixir, Hadoop,
+                            Spark, Kafka, Hbase, Cassandra...
+                            <br>
+                            &nbsp Sou fascinado por todo esse ambiente de dados, do desenvolvimento de aplicações para
+                            aquisição, tratamento e exibição, assim como o de descoberta do conhecimento.
+                        </p>
+
+                    </div>
+
+                    <div class="imgsob0" data-animation="right">
+                        <img src="img/sobre/Sobre 16fRed10.jpg">
                     </div>
 
                 </div>
-            </header>
 
-            <main class="content">
+            </section>
 
-                <section id="sobre">
+            <section id="educacao">
 
-                    <h2 class="titulopagina" data-animation="left">SOBRE</h2>
+                <h2 class="titulopagina" data-animation="left">EDUCAÇÃO</h2>
 
-                    <div class="sobtextoimg">
+                <div class="background-edu" data-animation="bottom">
 
-                        <div class="sobtexto" data-animation="left">
+                    <div class="container">
 
-                            <h3 class="nome">Roger<br>Guimaraes</h3>
-
-                            <p style="line-height: 2em;">
-                                &nbsp Olá, seja muito bem vindo, sou formado em engenharia mecânica e ciência da computação. 
-                                <br>
-                                &nbsp Iniciei minha carreira como técnico em informática e já atuei na área de suporte, manutenção de redes, desenvolvimento em java e instalação/configuração de sensores de automação. 
-                                <br>
-                                &nbsp Na área de software developer estou estudando Java, Angular e Node. 
-                                <br>
-                                &nbsp Em Engenharia de dados estou estudando Python, Scala e ambiente Cloud. 
-                                <br>
-                                &nbsp Além dessas tecnologias, tenho interesse em entender melhor Ruby, Elixir, Hadoop, Spark, Kafka, Hbase, Cassandra...
-                                <br>
-                                &nbsp Sou fascinado por todo esse ambiente de dados, do desenvolvimento de aplicações para aquisição, tratamento e exibição, assim como o de descoberta do conhecimento.
-                            </p>
-
+                        <div class="timeline-block timeline-block-right">
+                            <div class="yellow"></div>
+                            <div class="timeline-content">
+                                <h3>2021</h3>
+                                <span>DIO - Java Developer</span>
+                            </div>
                         </div>
 
-                        <div class="imgsob0" data-animation="right">
-                            <img src="img/sobre/Sobre 16fRed10.jpg">
+                        <div class="timeline-block timeline-block-right">
+                            <div class="yellow"></div>
+                            <div class="timeline-content">
+                                <h3>2020</h3>
+                                <span>Udemy - Planejamento e Gestão de Projetos</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-block timeline-block-left">
+                            <div class="yellow"></div>
+                            <div class="timeline-content">
+                                <h3>2019</h3>
+                                <p>UFF - Bacharel em Engenharia Mecânica</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-block timeline-block-right">
+                            <div class="white"></div>
+                            <div class="timeline-content">
+                            </div>
+                        </div>
+
+                        <div class="timeline-block timeline-block-left">
+                            <div class="yellow"></div>
+                            <div class="timeline-content">
+                                <h3>2008</h3>
+                                <span>UBM - Bacharel em Ciência da Computação</span>
+                            </div>
                         </div>
 
                     </div>
+                </div>
 
-                </section>
+            </section>
 
-                <section id="educacao">
+            <section id="habilidade">
 
-                    <h2 class="titulopagina" data-animation="left">EDUCAÇÃO</h2>
+                <h2 class="titulopagina" data-animation="left">HABILIDADE</h2>
 
-                    <div class="background-edu" data-animation="bottom">
+                <div class="iconeshabilidade">
 
-                        <div class="container">
+                    <p data-animation="left">
+                        &nbsp Minhas habilidades iniciais que estão em constante evolução, estão nas atuais tecnologias
+                        e suas versões: No Front End em Hmtl5, Css3, Js, jQuery e Bootstrap. Back End na linguagem em C
+                        e Java. E em Banco de dados com a linguagem em PL/SQL, utilizando o gerenciamento de banco de
+                        dados MySQL Workbench. E na criação e edição de conteúdo utilizando o Photoshop e Illustrator. E
+                        o Github para compartilhamento, hospedagem, publicações e testes finais das aplicações.
+                    </p>
 
-                            <div class="timeline-block timeline-block-right">
-                                <div class="yellow"></div>
-                                <div class="timeline-content">
-                                    <h3>2020</h3>
-                                    <span>Design Gráfico Adobe Photoshop e Illustrator</span>
-                                </div>
-                            </div>
+                    <div class="iconImg" data-animation="right">
+                        <img src="img/habilidade/icon_html5.svg">
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="iconImg" data-animation="right">
+                        <img src="img/habilidade/icon_css3.svg">
+                        <h4>CSS3</h4>
+                    </div>
+                    <div class="iconImg" data-animation="right">
+                        <img src="img/habilidade/icon_js.svg">
+                        <h4>JAVASCRIPT</h4>
+                    </div>
+                    <div class="iconImg" data-animation="right">
+                        <img src="img/habilidade/icon_jquery.svg">
+                        <h4>JQUERY</h4>
+                    </div>
+                    <div class="iconImg" data-animation="right">
+                        <img src="img/habilidade/icon_bootstrap.svg">
+                        <h4>BOOTSTRAP</h4>
+                    </div>
+                    <div class="iconImg" data-animation="right">
+                        <img src="img/habilidade/icon_java.svg">
+                        <h4>JAVA</h4>
+                    </div>
+                    <div class="iconImg" data-animation="right">
+                        <img src="img/habilidade/icon_sql.svg">
+                        <h4>PL/SQL</h4>
+                    </div>
+                    <div class="iconImg" data-animation="right">
+                        <img src="img/habilidade/icon_mysql.svg">
+                        <h4>MYSQL WORKBENCH</h4>
+                    </div>
+                    <div class="iconImg" data-animation="right">
+                        <img src="img/habilidade/icon_github.svg">
+                        <h4>GITHUB</h4>
+                    </div>
+                </div>
 
-                            <div class="timeline-block timeline-block-left">
-                                <div class="white"></div>
-                                <div class="timeline-content">
-                                </div>
-                            </div>
+            </section>
 
-                            <div class="timeline-block timeline-block-right">
-                                <div class="yellow"></div>
-                                <div class="timeline-content">
-                                    <h3>2018</h3>
-                                </div>
-                            </div>
+            <section id="portfolio">
 
-                            <div class="timeline-block timeline-block-left">
-                                <div class="yellow"></div>
-                                <div class="timeline-content">
-                                    <h3>&nbsp</h3>
-                                    <p>Graduado em Sistema de Informação</p>
-                                </div>
-                            </div>
+                <div class="portfolio">
+                    <h2 class="titulopagina" data-animation="left">PORTFÓLIO</h2>
 
-                            <div class="timeline-block timeline-block-right">
-                                <div class="yellow"></div>
-                                <div class="timeline-content">
-                                </div>
-                            </div>
-                            <div class="timeline-block timeline-block-left">
-                                <div class="yellow"></div>
-                                <div class="timeline-content">
-                                    <h3>2015</h3>
-                                </div>
-                            </div>
+                    <!--Filtro-->
+                    <div id="btnFiltroPort" data-animation="bottom">
+                        <button class="btn_filtro active" onclick="filterSelection('todos')"> Todos</button>
+                        <button class="btn_filtro" onclick="filterSelection('aplicativos')"> Aplicativos</button>
+                        <button class="btn_filtro" onclick="filterSelection('sistemas')"> Sistemas</button>
+                        <button class="btn_filtro" onclick="filterSelection('site')"> Sites</button>
 
-                            <div class="timeline-block timeline-block-right">
-                                <div class="white"></div>
-                                <div class="timeline-content">
-                                </div>
-                            </div>
-                            <div class="timeline-block timeline-block-left">
-                                <div class="yellow"></div>
-                                <div class="timeline-content">
-                                    <h3>2013</h3>
-                                    <span>Certificado em Itil v3 Foundation</span>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
 
-                </section>
+                    <!-- Portfolio Galerias Modal/Lightbox-->
+                    <div class="port" data-animation="bottom">
 
-                <section id="habilidade">
+                        <!--Aplicativos-->
+                        <div class="columnPort aplicativos">
+                            <div class="contentPort">
+                                <img src="img/portfolio/img_1.jpg" onclick="openModal();currentSlide(1)"
+                                    class="hover-shadow, small_img " alt="Aplicativos">
+                                <h4>Em breve!</h4>
+                                <!--<h4>Subtitulo - Lorem ipsum</h4>-->
+                            </div>
+                        </div>
 
-                    <h2 class="titulopagina" data-animation="left">HABILIDADE</h2>
+                        <div class="columnPort aplicativos">
+                            <div class="contentPort">
+                                <img src="img/portfolio/img_2.jpg" onclick="openModal();currentSlide(2)"
+                                    class="hover-shadow, small_img " alt="Aplicativos">
+                                <h4>Em breve!</h4>
+                                <!--<h4>Subtitulo - Lorem ipsum</h4>-->
+                            </div>
+                        </div>
 
-                    <div class="iconeshabilidade">
+                        <div class="columnPort aplicativos">
+                            <div class="contentPort">
+                                <img src="img/portfolio/img_3.jpg" onclick="openModal();currentSlide(3)"
+                                    class="hover-shadow, small_img " alt="Aplicativos">
+                                <h4>Em breve!</h4>
+                                <!--<h4>Subtitulo - Lorem ipsum</h4>-->
+                            </div>
+                        </div>
 
-                        <p data-animation="left">
-                            &nbsp Minhas habilidades iniciais que estão em constante evolução, estão nas atuais tecnologias e suas versões: No Front End em Hmtl5, Css3, Js, jQuery e Bootstrap. Back End na linguagem em C e Java. E em Banco de dados com a linguagem em PL/SQL, utilizando o gerenciamento de banco de dados MySQL Workbench. E na criação e edição de conteúdo utilizando o Photoshop e Illustrator. E o Github para compartilhamento, hospedagem, publicações e testes finais das aplicações.   
-                        </p>
 
-                        <div class="iconImg" data-animation="right">
-                            <img src="img/habilidade/icon_html5.svg">
-                            <h4>HTML5</h4>
+                        <!--Sistemas-->
+                        <div class="columnPort sistemas">
+                            <div class="contentPort">
+                                <img src="img/portfolio/img_5.jpg" onclick="openModal();currentSlide(5)"
+                                    class="hover-shadow, small_img " alt="Sistemas">
+                                <h4>Em breve!</h4>
+                                <!--<h4>Subtitulo - Lorem ipsum</h4>-->
+                            </div>
                         </div>
-                        <div class="iconImg" data-animation="right">
-                            <img src="img/habilidade/icon_css3.svg">
-                            <h4>CSS3</h4>
+                        <div class="columnPort sistemas">
+                            <div class="contentPort">
+                                <img src="img/portfolio/img_6.jpg" onclick="openModal();currentSlide(6)"
+                                    class="hover-shadow, small_img " alt="Sistemas">
+                                <h4>Em breve!</h4>
+                                <!--<h4>Subtitulo - Lorem ipsum</h4>-->
+                            </div>
                         </div>
-                        <div class="iconImg" data-animation="right">
-                            <img src="img/habilidade/icon_js.svg">
-                            <h4>JAVASCRIPT</h4>
+                        <div class="columnPort sistemas">
+                            <div class="contentPort">
+                                <img src="img/portfolio/img_7.jpg" onclick="openModal();currentSlide(7)"
+                                    class="hover-shadow, small_img " alt="Sistemas">
+                                <h4>Em breve!</h4>
+                                <!--<h4>Subtitulo - Lorem ipsum</h4>-->
+                            </div>
                         </div>
-                        <div class="iconImg" data-animation="right">
-                            <img src="img/habilidade/icon_jquery.svg">
-                            <h4>JQUERY</h4>
+
+
+                        <!--Sites-->
+                        <div class="columnPort sites">
+                            <div class="contentPort">
+                                <img src="img/portfolio/orientup.jpg" onclick="openModal();currentSlide(9)"
+                                    class="hover-shadow, small_img " alt="Web">
+                                <a href="https://www.orientup.com.br" target="_blank">
+                                    <h4>Orientup</h4>
+                                </a>
+                            </div>
                         </div>
-                        <div class="iconImg" data-animation="right">
-                            <img src="img/habilidade/icon_bootstrap.svg">
-                            <h4>BOOTSTRAP</h4>
+
+                        <div class="columnPort sites">
+                            <div class="contentPort">
+                                <img src="img/portfolio/lazuma.jpg" onclick="openModal();currentSlide(10)"
+                                    class="hover-shadow, small_img " alt="Web">
+                                <a href="https://www.lazuma.com.br" target="_blank">
+                                    <h4>Lazuma</h4>
+                                </a>
+                            </div>
                         </div>
-                        <div class="iconImg" data-animation="right">
-                            <img src="img/habilidade/icon_java.svg">
-                            <h4>JAVA</h4>
-                        </div>
-                        <div class="iconImg" data-animation="right">
-                            <img src="img/habilidade/icon_sql.svg">
-                            <h4>PL/SQL</h4>
-                        </div>
-                        <div class="iconImg" data-animation="right">
-                            <img src="img/habilidade/icon_mysql.svg">
-                            <h4>MYSQL WORKBENCH</h4>
-                        </div>
-                        <div class="iconImg" data-animation="right">
-                            <img src="img/habilidade/icon_photoshop.svg">
-                            <h4>PHOTOSHOP</h4>
-                        </div>
-                        <div class="iconImg" data-animation="right">
-                            <img src="img/habilidade/icon_illustrator.svg">
-                            <h4>ILLUSTRATOR</h4>
-                        </div>
-                        <div class="iconImg" data-animation="right">
-                            <img src="img/habilidade/icon_github.svg">
-                            <h4>GITHUB</h4>
-                        </div>
+
                     </div>
+                </div>
 
-                </section>
+            </section>
 
-                <section id="portfolio"> 
+            <section id="contato">
 
-                    <div class="portfolio">
-                        <h2 class="titulopagina" data-animation="left">PORTFÓLIO</h2>
+                <div class="contato">
+                    <h2 class="titulopagina" data-animation="left">CONTATO</h2>
 
-                        <!--Filtro-->
-                        <div id="btnFiltroPort" data-animation="bottom">
-                            <button class="btn_filtro active" onclick="filterSelection('todos')"> Todos</button>
-                            <button class="btn_filtro" onclick="filterSelection('aplicativos')"> Aplicativos</button>
-                            <button class="btn_filtro" onclick="filterSelection('sistemas')"> Sistemas</button>
-                            <button class="btn_filtro" onclick="filterSelection('site')"> Sites</button>
+                    <div class="background-cont">
+                        <div class="continfo">
+
+                            <div class="msg" data-animation="left">
+                                <span>Você tem alguma pergunta?</span>
+                                <h2>Sinta-se<br>à vontade para me<br>contatar!</h2>
+
+                                <i class="fas fa-arrow-circle-down fa-lg"></i>
+                            </div>
+
+                            <div class="contemail" data-animation="left">
+                                <a
+                                    href="mailto:logroger@gmail.com?subject=Olá, envie sua mensagem, responderei em breve. Obrigado!%20">
+
+                                    <button>
+                                        <i class="fas fa-envelope"></i>&nbsp logroger@gmail.com
+                                    </button>
+                                </a>
+
+                            </div>
+
+                            <div class="conttel" data-animation="left">
+                                <a href="https://api.whatsapp.com/send?phone=5524981411993">
+
+                                    <button>
+                                        <i class="fab fa-whatsapp"></i>&nbsp (24) 981411993
+                                    </button>
+                                </a>
+                            </div>
 
                         </div>
 
-                        <!-- Portfolio Galerias Modal/Lightbox-->
-                        <div class="port" data-animation="bottom">
-
-                            <!--Aplicativos-->
-                            <div class="columnPort aplicativos">
-                                <div class="contentPort">
-                                    <img src="img/portfolio/img_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow, small_img " alt="Aplicativos">
-                                    <h4>Em breve!</h4>
-                                    <!--<h4>Subtitulo - Lorem ipsum</h4>-->
-                                </div>
-                            </div>
-
-                            <div class="columnPort aplicativos">
-                                <div class="contentPort">
-                                    <img src="img/portfolio/img_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow, small_img " alt="Aplicativos">
-                                    <h4>Em breve!</h4>
-                                    <!--<h4>Subtitulo - Lorem ipsum</h4>-->
-                                </div>
-                            </div>
-
-                            <div class="columnPort aplicativos">
-                                <div class="contentPort">
-                                    <img src="img/portfolio/img_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow, small_img " alt="Aplicativos">
-                                    <h4>Em breve!</h4>
-                                    <!--<h4>Subtitulo - Lorem ipsum</h4>-->
-                                </div>
-                            </div>
-
-
-                            <!--Sistemas-->
-                            <div class="columnPort sistemas">
-                                <div class="contentPort">
-                                    <img src="img/portfolio/img_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow, small_img " alt="Sistemas">
-                                    <h4>Em breve!</h4>
-                                    <!--<h4>Subtitulo - Lorem ipsum</h4>-->
-                                </div>
-                            </div>
-                            <div class="columnPort sistemas">
-                                <div class="contentPort">
-                                    <img src="img/portfolio/img_6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow, small_img " alt="Sistemas">
-                                    <h4>Em breve!</h4>
-                                    <!--<h4>Subtitulo - Lorem ipsum</h4>-->
-                                </div>
-                            </div>
-                            <div class="columnPort sistemas">
-                                <div class="contentPort">
-                                    <img src="img/portfolio/img_7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow, small_img " alt="Sistemas">
-                                    <h4>Em breve!</h4>
-                                    <!--<h4>Subtitulo - Lorem ipsum</h4>-->
-                                </div>
-                            </div>
-
-
-                            <!--Sites-->
-                            <div class="columnPort sites">
-                                <div class="contentPort">
-                                    <img src="img/portfolio/orientup.png" onclick="openModal();currentSlide(9)" class="hover-shadow, small_img " alt="Web">
-                                    <h4>Em breve!</h4>
-                                    <!--<h4>Subtitulo - Lorem ipsum</h4>-->
-                                </div>
-                            </div>
-                            <div class="columnPort sites">
-                                <div class="contentPort">
-                                    <img src="img/portfolio/lazuma.png" onclick="openModal();currentSlide(10)" class="hover-shadow, small_img " alt="Web">
-                                    <h4>Em breve!</h4>
-                                    <!--<h4>Subtitulo - Lorem ipsum</h4>-->
-                                </div>
-                            </div>
-<!--
-                            <div class="columnPort sites">
-                                <div class="contentPort">
-                                    <img src="img/portfolio/img_11.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow, small_img " alt="Web">
-                                    <h4>Em breve!</h4>
-                                    <h4>Subtitulo - Lorem ipsum</h4>
-                                </div>
-                            </div>
--->
-
+                        <div class="imgcont1">
+                            <img src="img/contato/contato10Red7.png" data-animation="right">
                         </div>
+
+
                     </div>
+                </div>
 
-                </section>
+            </section>
 
-                <section id="contato">
+        </main>
 
-                    <div class="contato">
-                        <h2 class="titulopagina" data-animation="left">CONTATO</h2>
-
-                        <div class="background-cont">
-                            <div class="continfo">          
-
-                                <div class="msg" data-animation="left">
-                                    <span>Você tem alguma pergunta?</span>
-                                    <h2>Sinta-se<br>à vontade para me<br>contatar!</h2>
-
-                                    <i class="fas fa-arrow-circle-down fa-lg"></i>
-                                </div>
-
-                                <div class="contemail" data-animation="left">
-                                    <a href="mailto:logroger@gmail.com?subject=Olá, envie sua mensagem, responderei em breve. Obrigado!%20">
-
-                                        <button>
-                                            <i class="fas fa-envelope"></i>&nbsp logroger@gmail.com
-                                        </button>
-                                    </a>
-
-                                </div>
-
-                                <div class="conttel" data-animation="left">
-                                    <a href="https://api.whatsapp.com/send?phone=5524981411993">
-
-                                        <button>
-                                            <i class="fab fa-whatsapp"></i>&nbsp (24) 981411993
-                                        </button>
-                                    </a>
-                                </div>
-
-                            </div>
-
-                            <div class="imgcont1">
-                                <img src="img/contato/contato10Red7.png" data-animation="right">
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </section>
-
-            </main>
-
-            <footer>
-                <!--Footer-->
-                <footer id="footer">
-                    <div id="copyright">
-                        <ul class="copyright">
-                            <li>
-                                <a href="https://rogerlog.github.io">RG</a>
-                                <a>&copy; Copyright 2020 - Todos os direitos reservados. Roger Guimaraes</a>
-                            </li>
-                            <!--
+        <footer>
+            <!--Footer-->
+            <footer id="footer">
+                <div id="copyright">
+                    <ul class="copyright">
+                        <li>
+                            <a href="https://rogerlog.github.io">RG</a>
+                            <a>&copy; Copyright 2020 - Todos os direitos reservados. Roger Guimaraes</a>
+                        </li>
+                        <!--
                             <li>
                                 Design: <a href="url do site">RG</a>
                             </li>
-                            -->                            
-                        </ul>
-                    </div>
-                </footer>
+                            -->
+                    </ul>
+                </div>
             </footer>
-        </div>
+        </footer>
+    </div>
 
 
-        <!-- Scripts -->
-        <script src="js/js_menulaterial.js"></script>
-        <script src="js/js_modal.js"></script>
-        <script src="js/js_portfolio.js"></script>
-        <script src="js/js_botaotop.js"></script>
-        <script src="js/js_animationscroll.js"></script>
-        <script src="js/js_scramble.js"></script>
+    <!-- Scripts -->
+    <script src="js/js_menulaterial.js"></script>
+    <script src="js/js_modal.js"></script>
+    <script src="js/js_portfolio.js"></script>
+    <script src="js/js_botaotop.js"></script>
+    <script src="js/js_animationscroll.js"></script>
+    <script src="js/js_scramble.js"></script>
 
-    </body>
+</body>
+
 </html>
-
-<!--
-
--->
